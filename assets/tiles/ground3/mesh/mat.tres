@@ -1,0 +1,46 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://assets/tiles/ground3/ground3.png" type="Texture" id=1]
+[ext_resource path="res://assets/tiles/ground3/mesh/NormalMap (1).png" type="Texture" id=2]
+
+[sub_resource type="Shader" id=2]
+code = "shader_type spatial;
+
+uniform float wid;
+
+uniform float x;
+uniform float y;
+uniform float tile_size;
+uniform float texture_size;
+
+uniform sampler2D albedo;
+uniform sampler2D normal_map;
+
+
+//TODO: Fix lightning, its too bright!
+void fragment(){
+  vec2 nUV = UV;
+  nUV = nUV / wid;
+  
+  nUV.x += (x * tile_size) / texture_size;
+  nUV.y += (y * tile_size) / texture_size;
+  
+  vec4 tex = texture(albedo,nUV);
+  vec3 norm = texture(normal_map,nUV).xyz;
+  NORMALMAP = norm;
+  SPECULAR = 0f;
+  ROUGHNESS = 1f;
+  
+  ALPHA = tex.a;
+  ALBEDO = tex.rgb;
+}"
+
+[resource]
+shader = SubResource( 2 )
+shader_param/wid = 4.0
+shader_param/x = 0.0
+shader_param/y = 0.0
+shader_param/tile_size = 384.0
+shader_param/texture_size = 1536.0
+shader_param/albedo = ExtResource( 1 )
+shader_param/normal_map = ExtResource( 2 )
