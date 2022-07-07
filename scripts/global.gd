@@ -3,8 +3,8 @@ extends Node
 static func get_delta(delta: float) -> float:
 	return 60 / (1 / (delta if not delta == 0 else 0.0001))
 
-static func get_vector_delta(delta: float) -> Vector2:
-	return Vector2(get_delta(delta), get_delta(delta))
+static func get_vector_delta(delta: float) -> Vector3:
+	return Vector3(get_delta(delta), get_delta(delta), get_delta(delta))
 
 func _input(ev: InputEvent) -> void:
 	if ev.is_action_pressed('ui_fullscreen'):
