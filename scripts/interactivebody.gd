@@ -19,5 +19,5 @@ func _process(delta) -> void:
     if module.has_method('exec'):
       module.exec(delta, self)
 
-  velocity += Vector2(0, gravity) * Global.get_vector_delta(delta)
+  velocity -= Vector3(0, gravity, 0) * Global.get_vector_delta(delta)
   velocity = move_and_slide(velocity, Vector2.UP)

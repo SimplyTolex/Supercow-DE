@@ -1,0 +1,35 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type spatial;
+
+uniform float wid;
+
+uniform float x;
+uniform float y;
+uniform float tile_size;
+
+uniform sampler2D albedo;
+uniform sampler2D normal_map;
+
+const float offset = 3.6f;
+const float texture_size = 1557.f;
+
+//TODO: Fix lightning, its too bright!
+void fragment(){
+	float xx = 3f + (389f * x);
+	float yy = 3f + (389f * y);
+  vec2 nUV = UV;
+  nUV = (nUV / wid) * ((tile_size - offset) / tile_size);
+  nUV.x += (xx / texture_size);
+  nUV.y += (yy / texture_size);
+  
+  vec4 tex = texture(albedo,nUV);
+  vec3 norm = texture(normal_map,nUV).xyz;
+  NORMALMAP = norm;
+  SPECULAR = 0f;
+  ROUGHNESS = 1f;
+  
+  ALPHA = tex.a;
+  ALBEDO = tex.rgb;
+}"
