@@ -2,21 +2,19 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/backmount1.png-16c71199c8cc059aaa312f5e1b453340.s3tc.stex"
-path.etc2="res://.import/backmount1.png-16c71199c8cc059aaa312f5e1b453340.etc2.stex"
+path="res://.import/backmount1.png-16c71199c8cc059aaa312f5e1b453340.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://assets/bgs/backmount1.png"
-dest_files=[ "res://.import/backmount1.png-16c71199c8cc059aaa312f5e1b453340.s3tc.stex", "res://.import/backmount1.png-16c71199c8cc059aaa312f5e1b453340.etc2.stex" ]
+dest_files=[ "res://.import/backmount1.png-16c71199c8cc059aaa312f5e1b453340.stex" ]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
