@@ -1,7 +1,10 @@
 class_name Player extends KinematicBody
 
 var speed: float = 13.0
-var jump_force: float = 20.0
+var jump_force: float = 6.0
+
+var jump_counter: float = 5.0
+var jumping: bool = false
 
 var air_resist: float = 0.08
 
@@ -16,7 +19,8 @@ func _process(delta: float) -> void:
 	velocity -= gravity * gravity_resistance * Global.get_vector_delta(delta)
 	velocity.x = 0
 	velocity = move_and_slide(velocity, Vector3.UP)
-
+	
+	if jump_counter < 0 or velocity.y < 0: jumping = false
 
 func controls(delta: float) -> void:
 	var dir: float = Input.get_axis('p_left','p_right')
@@ -28,10 +32,16 @@ func controls(delta: float) -> void:
 	
 	if Input.is_action_pressed('p_jump') and is_on_floor():
 		velocity.y = jump_force
+		jump_counter = 5.0
+		jumping = true
+	
+	if Input.is_action_pressed('p_jump') and jumping:
+		velocity.y += jump_force * (jump_counter / 5.0) * delta
+		jump_counter -= 1 * delta
 	
 	if Input.is_action_just_released('p_jump') and velocity.y > 0.0:
 		velocity.y /= 2 * delta
 
 
 func _to_string() -> String:
-	return 'vel: %s, on floor: %s' % [velocity, is_on_floor()]
+	return 'vel: %s\non floor: %s\njumping: %s\njump counter: %s' % [velocity, is_on_floor(), jumping, jump_counter]
