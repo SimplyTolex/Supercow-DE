@@ -1,15 +1,22 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/tiles/ground3/mesh/Lib.meshlib" type="MeshLibrary" id=1]
-[ext_resource path="res://objects/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/level.gd" type="Script" id=3]
 
-[node name="Spatial" type="Spatial"]
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 1, 9.28133 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1, 1, 7.28772 )
+
+[node name="Level" type="Spatial"]
+script = ExtResource( 3 )
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource( 1 )
 cell_center_x = false
+collision_layer = 0
+collision_mask = 0
 data = {
 "cells": PoolIntArray( -393216, 0, 1507343, -327680, 0, 1507330, -262144, 0, 1507328, -196608, 0, 1507330, -131072, 0, 1507328, -65536, 0, 1507342, -393216, 1, 1507343, -327680, 1, 1507331, -262144, 1, 1507329, -196608, 1, 1507331, -131072, 1, 1507329, -65536, 1, 1507342, -393216, 2, 1507343, -327680, 2, 1507330, -262144, 2, 1507328, -196608, 2, 1507330, -131072, 2, 1507328, -65536, 2, 1507342, -393216, 3, 1507343, -327680, 3, 1507331, -262144, 3, 1507329, -196608, 3, 1507331, -131072, 3, 1507329, -65536, 3, 1507342, -393216, 4, 1507343, -327680, 4, 1507330, -262144, 4, 1507328, -196608, 4, 1507330, -131072, 4, 1507328, -65536, 4, 1507342, -393216, 5, 1507341, -327680, 5, 1507337, -262144, 5, 1507337, -196608, 5, 1507337, -131072, 5, 1507337, -65536, 5, 1507339, -393216, 65531, 1507340, -327680, 65531, 1507336, -262144, 65531, 1507336, -196608, 65531, 1507336, -131072, 65531, 1507336, -65536, 65531, 1507338, -393216, 65532, 1507343, -327680, 65532, 1507330, -262144, 65532, 1507328, -196608, 65532, 1507330, -131072, 65532, 1507328, -65536, 65532, 1507342, -393216, 65533, 1507343, -327680, 65533, 1507331, -262144, 65533, 1507329, -196608, 65533, 1507331, -131072, 65533, 1507329, -65536, 65533, 1507342, -393216, 65534, 1507343, -327680, 65534, 1507330, -262144, 65534, 1507328, -196608, 65534, 1507330, -131072, 65534, 1507328, -65536, 65534, 1507342, -393216, 65535, 1507343, -327680, 65535, 1507331, -262144, 65535, 1507329, -196608, 65535, 1507331, -131072, 65535, 1507329, -65536, 65535, 1507342 )
 }
@@ -17,3 +24,17 @@ __meta__ = {
 "_editor_clip_": 0,
 "_editor_floor_": Vector3( 0, 0, 0 )
 }
+
+[node name="StartPos" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24918, -5.37816 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.386374, -0.248385 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.73461, 1.07003 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 10.4371 )
+shape = SubResource( 2 )
