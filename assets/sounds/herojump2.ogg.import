@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/herojump2.ogg-819869a44a39a4d05d0eeed811e29413.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/herojump2.ogg"
+dest_files=[ "res://.import/herojump2.ogg-819869a44a39a4d05d0eeed811e29413.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

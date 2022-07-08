@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/checkpont2.ogg-23d815d85683f38611d6c5373f5314ca.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/checkpont2.ogg"
+dest_files=[ "res://.import/checkpont2.ogg-23d815d85683f38611d6c5373f5314ca.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

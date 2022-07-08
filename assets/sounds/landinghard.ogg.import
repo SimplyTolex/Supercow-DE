@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/landinghard.ogg-9dd658bec38c04eb29f24bd4f50bab67.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/landinghard.ogg"
+dest_files=[ "res://.import/landinghard.ogg-9dd658bec38c04eb29f24bd4f50bab67.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

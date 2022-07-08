@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/goat.ogg-134b3986abc189315fe136f19f9e2064.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/goat.ogg"
+dest_files=[ "res://.import/goat.ogg-134b3986abc189315fe136f19f9e2064.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/raven.ogg-db1c759e39e5ecf7b01c3e6228dcd703.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/raven.ogg"
+dest_files=[ "res://.import/raven.ogg-db1c759e39e5ecf7b01c3e6228dcd703.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

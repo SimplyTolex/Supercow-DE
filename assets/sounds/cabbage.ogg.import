@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/cabbage.ogg-b252aadae5d25f0ed9cc5cca05225827.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/cabbage.ogg"
+dest_files=[ "res://.import/cabbage.ogg-b252aadae5d25f0ed9cc5cca05225827.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

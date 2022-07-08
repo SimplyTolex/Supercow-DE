@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/powerupmegajump.ogg-447d9ea17b17a451c4236ee62943c4da.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/powerupmegajump.ogg"
+dest_files=[ "res://.import/powerupmegajump.ogg-447d9ea17b17a451c4236ee62943c4da.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

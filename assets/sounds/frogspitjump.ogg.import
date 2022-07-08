@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/frogspitjump.ogg-72a0bf3e42262e79b8b97dc4c6572476.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/frogspitjump.ogg"
+dest_files=[ "res://.import/frogspitjump.ogg-72a0bf3e42262e79b8b97dc4c6572476.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

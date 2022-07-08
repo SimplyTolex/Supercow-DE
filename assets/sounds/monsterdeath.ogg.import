@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/monsterdeath.ogg-7cfec1cd10e86952761aa65187bcba8e.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/monsterdeath.ogg"
+dest_files=[ "res://.import/monsterdeath.ogg-7cfec1cd10e86952761aa65187bcba8e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

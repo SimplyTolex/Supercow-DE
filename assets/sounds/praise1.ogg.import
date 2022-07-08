@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/praise1.ogg-7e4608b3424c357d241dbf82201f2425.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/praise1.ogg"
+dest_files=[ "res://.import/praise1.ogg-7e4608b3424c357d241dbf82201f2425.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

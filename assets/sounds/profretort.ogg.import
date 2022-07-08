@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/profretort.ogg-e52061eabb7c1556b1936ed50ef22cfd.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/profretort.ogg"
+dest_files=[ "res://.import/profretort.ogg-e52061eabb7c1556b1936ed50ef22cfd.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/fruitdown.ogg-4a4898a413a4c2ac627d7121296bef5f.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/fruitdown.ogg"
+dest_files=[ "res://.import/fruitdown.ogg-4a4898a413a4c2ac627d7121296bef5f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

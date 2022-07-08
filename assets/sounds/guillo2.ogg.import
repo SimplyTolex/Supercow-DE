@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/guillo2.ogg-40faedaed8b25e2fd426d4972ac0ae0e.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/guillo2.ogg"
+dest_files=[ "res://.import/guillo2.ogg-40faedaed8b25e2fd426d4972ac0ae0e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

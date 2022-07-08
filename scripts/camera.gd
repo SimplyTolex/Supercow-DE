@@ -8,7 +8,7 @@ func _ready() -> void:
 	translation.x = -zoom
 	scroll_y = References.player.translation.y + 1.5
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	# смотрим вверх или вниз
 	offset.y = 0
 	offset.y += -3 if Input.is_action_pressed('p_down') else 0

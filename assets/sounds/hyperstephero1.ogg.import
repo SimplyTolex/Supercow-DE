@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/hyperstephero1.ogg-de1bc74e1c02cf97781c0913c384a4ce.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/hyperstephero1.ogg"
+dest_files=[ "res://.import/hyperstephero1.ogg-de1bc74e1c02cf97781c0913c384a4ce.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

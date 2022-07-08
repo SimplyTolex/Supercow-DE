@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/moledig.ogg-45afcddd76632dd502c89e5b955af6ad.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/moledig.ogg"
+dest_files=[ "res://.import/moledig.ogg-45afcddd76632dd502c89e5b955af6ad.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

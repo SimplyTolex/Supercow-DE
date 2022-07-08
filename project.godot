@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "CanvasLayer",
+"class": "HUD",
+"language": "GDScript",
+"path": "res://scripts/HUD.gd"
+}, {
 "base": "Spatial",
 "class": "Level",
 "language": "GDScript",
@@ -25,6 +30,7 @@ _global_script_classes=[ {
 "path": "res://scripts/camera.gd"
 } ]
 _global_script_class_icons={
+"HUD": "",
 "Level": "",
 "Player": "",
 "PlayerCamera": ""
@@ -40,7 +46,8 @@ config/icon="res://icon.png"
 Global="*res://scripts/auto_load/global.gd"
 References="*res://scripts/auto_load/references.gd"
 Audio="*res://scripts/auto_load/audio.gd"
-Ui="*res://objects/UI.tscn"
+Ui="*res://objects/debugUI.tscn"
+MusicPlayer="*res://scripts/musicplayer.gd"
 
 [display]
 

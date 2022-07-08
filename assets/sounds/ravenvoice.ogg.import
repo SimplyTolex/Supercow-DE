@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ravenvoice.ogg-34bcbc6db1d1efd01bd5d9bd804993a4.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/ravenvoice.ogg"
+dest_files=[ "res://.import/ravenvoice.ogg-34bcbc6db1d1efd01bd5d9bd804993a4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

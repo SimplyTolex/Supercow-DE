@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/spider.ogg-1ab288637f0154933bcbdf17be48fe72.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/spider.ogg"
+dest_files=[ "res://.import/spider.ogg-1ab288637f0154933bcbdf17be48fe72.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

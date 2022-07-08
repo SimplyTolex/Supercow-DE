@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/molestone.ogg-59f9481d8dbfa89d8e270676952385e5.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/molestone.ogg"
+dest_files=[ "res://.import/molestone.ogg-59f9481d8dbfa89d8e270676952385e5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

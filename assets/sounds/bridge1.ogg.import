@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bridge1.ogg-020a58dfd28895b5c99aa8375dff7045.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/bridge1.ogg"
+dest_files=[ "res://.import/bridge1.ogg-020a58dfd28895b5c99aa8375dff7045.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

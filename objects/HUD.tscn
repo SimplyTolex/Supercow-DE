@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/ui/hud/lifebar.png" type="Texture" id=1]
+[ext_resource path="res://scripts/HUD.gd" type="Script" id=2]
+[ext_resource path="res://assets/ui/hud/levelbar.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/hud/scorebar.png" type="Texture" id=4]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="LifebarContainer" type="Control" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -720.0
+margin_right = 1280.0
+
+[node name="Lifebar" type="Sprite" parent="LifebarContainer"]
+position = Vector2( 32, 689 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 0, -512 )
+
+[node name="LevelbarContainer" type="Control" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -1280.0
+margin_bottom = 720.0
+
+[node name="Levelbar" type="Sprite" parent="LevelbarContainer"]
+position = Vector2( 1159, 64 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 3 )
+
+[node name="ScorebarContainer" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1280.0
+margin_top = -720.0
+
+[node name="Scorebar" type="Sprite" parent="ScorebarContainer"]
+position = Vector2( 1136, 669 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 4 )

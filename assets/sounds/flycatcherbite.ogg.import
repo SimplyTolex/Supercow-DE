@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/flycatcherbite.ogg-11626a2cd8ee9a0cc8792b769d0f9375.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/flycatcherbite.ogg"
+dest_files=[ "res://.import/flycatcherbite.ogg-11626a2cd8ee9a0cc8792b769d0f9375.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

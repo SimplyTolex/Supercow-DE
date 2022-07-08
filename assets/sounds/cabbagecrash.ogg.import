@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/cabbagecrash.ogg-cea1fac3e2319d212cb07340479d2e50.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/cabbagecrash.ogg"
+dest_files=[ "res://.import/cabbagecrash.ogg-cea1fac3e2319d212cb07340479d2e50.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

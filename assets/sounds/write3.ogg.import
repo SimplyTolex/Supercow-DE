@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/write3.ogg-ef4c5c4f64d979f776e702542ed48a1f.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/write3.ogg"
+dest_files=[ "res://.import/write3.ogg-ef4c5c4f64d979f776e702542ed48a1f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

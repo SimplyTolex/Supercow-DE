@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bonuscoin3.ogg-550c8bf3098a648667273029c49c9fef.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/bonuscoin3.ogg"
+dest_files=[ "res://.import/bonuscoin3.ogg-550c8bf3098a648667273029c49c9fef.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

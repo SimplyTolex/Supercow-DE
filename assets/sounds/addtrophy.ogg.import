@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/addtrophy.ogg-ea3f72cad8793ed78137a041c39d505b.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/addtrophy.ogg"
+dest_files=[ "res://.import/addtrophy.ogg-ea3f72cad8793ed78137a041c39d505b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/garbage2.ogg-34e4aca53555160c6149041b1cb37108.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/garbage2.ogg"
+dest_files=[ "res://.import/garbage2.ogg-34e4aca53555160c6149041b1cb37108.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

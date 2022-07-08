@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/openexit.ogg-4a48b8f519cbc37f4929085adf0e4ca9.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/openexit.ogg"
+dest_files=[ "res://.import/openexit.ogg-4a48b8f519cbc37f4929085adf0e4ca9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

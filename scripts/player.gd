@@ -38,9 +38,6 @@ func controls(delta: float) -> void:
 	if Input.is_action_pressed('p_jump') and jumping:
 		velocity.y += jump_force * (jump_counter / 5.0) * delta
 		jump_counter -= 1 * delta
-	
-	if Input.is_action_just_released('p_jump') and velocity.y > 0.0:
-		velocity.y /= 2 * delta
 
 
 func _to_string() -> String:
