@@ -1,5 +1,8 @@
 extends Node
 
+var lives: int = 3
+var score: int = 0
+
 static func get_delta(delta: float) -> float:
 	return 60 / (1 / (delta if not delta == 0 else 0.0001))
 
