@@ -47,7 +47,8 @@ Global="*res://scripts/auto_load/global.gd"
 References="*res://scripts/auto_load/references.gd"
 Audio="*res://scripts/auto_load/audio.gd"
 Ui="*res://objects/debugUI.tscn"
-MusicPlayer="*res://scripts/musicplayer.gd"
+MusicPlayer="*res://scripts/auto_load/musicplayer.gd"
+Sounds="*res://scripts/auto_load/sounds.gd"
 
 [display]
 
