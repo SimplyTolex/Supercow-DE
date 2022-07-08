@@ -15,11 +15,14 @@ func _process(delta: float) -> void:
 	offset.y += 3 if Input.is_action_pressed('p_up') else 0
 	
 	# считаем Y
+	var hardscroll: bool = false
 	if scroll_y < References.player.translation.y - 2.5:
 		scroll_y = References.player.translation.y - 2.5
+		hardscroll = true
 	if scroll_y > References.player.translation.y + 2.5:
 		scroll_y = References.player.translation.y + 2.5
+		hardscroll = true
 	
 	translation.x = lerp(translation.x, -zoom, 0.05)
-	translation.y = lerp(translation.y, scroll_y + offset.y, 0.02)
+	translation.y = lerp(translation.y, scroll_y + offset.y, 0.02 if !hardscroll else 0.1)
 	translation.z = lerp(translation.z, References.player.translation.z + offset.x, 0.15)
