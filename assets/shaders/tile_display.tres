@@ -2,6 +2,7 @@
 
 [resource]
 code = "shader_type spatial;
+render_mode specular_disabled;
 
 uniform float wid;
 

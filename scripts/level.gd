@@ -14,12 +14,12 @@ func _ready():
 		
 		add_child(References.camera)
 		References.camera.owner = self
-		References.camera.translation = References.player.translation
+		#References.camera.translation = References.player.translation
 		
 		add_child(References.hud)
 		References.hud.owner = self
 	else:
 		push_warning('[LEVEL]: IN %s STARTPOS IS %s, STARTING WITHOUT PLAYER!' % [self,start])
 	
-	MusicPlayer.play_random(music, 0)
+	Audio.play_random(music, 0)
 	

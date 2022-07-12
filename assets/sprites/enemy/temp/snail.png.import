@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/scorebar.png-5582a6c82aad0174e0a93daa733523e5.stex"
+path="res://.import/snail.png-b78ecf77e86141817d9c35e2910d0180.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/hud/scorebar.png"
-dest_files=[ "res://.import/scorebar.png-5582a6c82aad0174e0a93daa733523e5.stex" ]
+source_file="res://assets/sprites/enemy/temp/snail.png"
+dest_files=[ "res://.import/snail.png-b78ecf77e86141817d9c35e2910d0180.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

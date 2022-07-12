@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/levelbar.png-0de48aee15a2555dc4e60f94ea522c25.stex"
+path="res://.import/piranha.png-8e135f5d3620de10a3c057e6acae3752.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/hud/levelbar.png"
-dest_files=[ "res://.import/levelbar.png-0de48aee15a2555dc4e60f94ea522c25.stex" ]
+source_file="res://assets/sprites/enemy/temp/piranha.png"
+dest_files=[ "res://.import/piranha.png-8e135f5d3620de10a3c057e6acae3752.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
