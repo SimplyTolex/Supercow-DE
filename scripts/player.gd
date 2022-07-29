@@ -26,6 +26,10 @@ func _process(delta: float) -> void:
 	_velocity.x = 0
 	
 	_velocity = move_and_slide(_velocity, Vector3.UP)
+	
+#	TODO: добавить звуки ходьбы
+#	if is_on_floor() and (_velocity.z > 3.0 or _velocity.z < -3.0):
+#		Audio.play_random_sound(Sounds.get_SFX(Sounds.TYPE.PLAYER,Sounds.PLAYER_S.WALKS), translation)
 
 func controls(delta: float) -> void:
 	var dir: float = Input.get_axis('p_left','p_right')

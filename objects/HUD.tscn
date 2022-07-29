@@ -8,23 +8,29 @@
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 690.0 ]
+}
 
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="HP" type="TextureRect" parent="Control"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 34.0
-margin_top = -179.0
+margin_top = -157.0
 margin_right = 299.0
-margin_bottom = -51.0
+margin_bottom = -29.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 5
 
-[node name="Hp" type="Label" parent="Control/HP"]
+[node name="HpLabel" type="Label" parent="Control/HP"]
 margin_left = 121.0
 margin_top = 60.0
 margin_right = 273.0
@@ -47,6 +53,25 @@ texture = ExtResource( 3 )
 expand = true
 stretch_mode = 5
 
+[node name="LevelLabel" type="Label" parent="Control/Level"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -114.0
+margin_top = -17.0
+margin_right = 278.0
+margin_bottom = 112.0
+rect_scale = Vector2( 0.25, 0.25 )
+theme = ExtResource( 5 )
+text = "1-1"
+align = 1
+valign = 1
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Score" type="TextureRect" parent="Control"]
 anchor_left = 1.0
 anchor_top = 1.0
@@ -60,7 +85,7 @@ texture = ExtResource( 4 )
 expand = true
 stretch_mode = 5
 
-[node name="Score" type="Label" parent="Control/Score"]
+[node name="ScoreLabel" type="Label" parent="Control/Score"]
 margin_left = 38.0
 margin_top = 6.0
 margin_right = 658.0
@@ -73,3 +98,27 @@ align = 2
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="ClearCond" type="TextureRect" parent="Control"]
+visible = false
+margin_left = 38.0
+margin_top = 34.0
+margin_right = 194.0
+margin_bottom = 81.0
+expand = true
+
+[node name="ClearCondLabel" type="Label" parent="Control/ClearCond"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -94.0
+margin_top = -16.5
+margin_right = 233.0
+margin_bottom = 112.5
+rect_scale = Vector2( 0.25, 0.25 )
+theme = ExtResource( 5 )
+text = "69/420"
+align = 1
+valign = 1
+uppercase = true

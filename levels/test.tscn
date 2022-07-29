@@ -47,7 +47,7 @@ ssao_bias = 0.001
 ssao_quality = 2
 adjustment_enabled = true
 
-[node name="Level" type="Spatial"]
+[node name="TestLevel" type="Spatial"]
 script = ExtResource( 3 )
 music = [ ExtResource( 2 ) ]
 

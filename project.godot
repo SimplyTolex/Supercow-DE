@@ -45,7 +45,7 @@ _global_script_class_icons={
 [application]
 
 config/name="SuperCow Definitive Edition"
-run/main_scene="res://levels/test.tscn"
+run/main_scene="res://other_scenes/MenuSelection.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -60,14 +60,23 @@ Sounds="*res://scripts/auto_load/sounds.gd"
 
 window/size/width=1280
 window/size/height=720
+window/size/test_width=853
+window/size/test_height=480
 window/vsync/vsync_via_compositor=true
-mouse_cursor/custom_image="res://assets/sprites/mouse_temp.png"
 window/stretch/mode="2d"
 window/stretch/aspect="expand"
 
 [editor_plugins]
 
 enabled=PoolStringArray(  )
+
+[gdnative]
+
+singletons=[  ]
+
+[global]
+
+mouse=false
 
 [input]
 

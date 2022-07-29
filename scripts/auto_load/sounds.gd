@@ -9,7 +9,8 @@ enum TYPE{
 enum PLAYER_S{
 	JUMPS,
 	LAND,
-	LAND_HARD
+	LAND_HARD,
+	WALKS
 }
 
 enum BONUS_S{
@@ -27,6 +28,11 @@ var LIST = {
 		],
 		PLAYER_S.LAND: [preload('res://assets/sounds/landing.ogg')],
 		PLAYER_S.LAND_HARD: [preload('res://assets/sounds/landinghard.ogg')],
+		PLAYER_S.WALKS: [
+			preload("res://assets/sounds/stephero1.ogg"),
+			preload("res://assets/sounds/stephero2.ogg"),
+			preload("res://assets/sounds/stephero3.ogg")
+		]
 	},
 	# TYPE BONUS
 	TYPE.BONUS: {
