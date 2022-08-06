@@ -8,9 +8,10 @@ func _on_QuitButton_pressed() -> void:
 
 func _on_ReturnButton_pressed() -> void:
 	emit_signal("return_to_menu", "MenuSelection/MarginContainer/VBoxContainer/MarginContainer3/QuitButton")
-	Blackout.disappear()
+	Blackout.disappear(get_node("."))
 	self.hide()
 
 
 func _on_QuitPrompt_about_to_show() -> void:
 	$VBoxContainer/HBoxContainer/QuitButton.grab_focus()
+	Blackout.appear(get_node("."))

@@ -16,7 +16,6 @@ func _ready() -> void:
 
 func on_QuitButton_pressed():
 	$MenuSelection.hide()
-	Blackout.appear()
 	$QuitPrompt.popup_centered()
 
 

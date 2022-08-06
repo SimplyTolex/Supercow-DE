@@ -55,7 +55,7 @@ References="*res://scripts/auto_load/references.gd"
 DebugUI="*res://objects/debugUI.tscn"
 Audio="*res://scripts/auto_load/audio.gd"
 Sounds="*res://scripts/auto_load/sounds.gd"
-Blackout="*res://assets/sprites/ui/Blackout.tscn"
+Blackout="*res://objects/Blackout.tscn"
 
 [debug]
 

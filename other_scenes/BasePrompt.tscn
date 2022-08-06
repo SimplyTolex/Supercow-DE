@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/themes/main_menu_theme.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/ui/BasePrompt.gd" type="Script" id=2]
+
+[node name="BasePrompt" type="PopupPanel"]
+margin_right = 152.0
+margin_bottom = 162.0
+rect_min_size = Vector2( 400, 1 )
+theme = ExtResource( 1 )
+popup_exclusive = true
+script = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 400.0
+margin_bottom = 162.0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+margin_right = 400.0
+margin_bottom = 109.0
+custom_constants/margin_right = 40
+custom_constants/margin_top = 40
+custom_constants/margin_left = 40
+custom_constants/margin_bottom = 40
+
+[node name="PromptLabel" type="Label" parent="VBoxContainer/MarginContainer"]
+margin_left = 40.0
+margin_top = 40.0
+margin_right = 360.0
+margin_bottom = 69.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "PromptText"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+margin_top = 113.0
+margin_right = 400.0
+margin_bottom = 162.0
+custom_constants/margin_top = 10
+custom_constants/margin_bottom = 10
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/MarginContainer2"]
+margin_top = 10.0
+margin_right = 400.0
+margin_bottom = 39.0
+columns = 2
+
+[node name="AcceptButton" type="Button" parent="VBoxContainer/MarginContainer2/GridContainer"]
+margin_right = 198.0
+margin_bottom = 29.0
+size_flags_horizontal = 3
+text = "AcceptButton"
+
+[node name="RefuseButton" type="Button" parent="VBoxContainer/MarginContainer2/GridContainer"]
+margin_left = 202.0
+margin_right = 400.0
+margin_bottom = 29.0
+size_flags_horizontal = 3
+text = "RefuseButton"
+
+[connection signal="about_to_show" from="." to="." method="_on_BasePrompt_about_to_show"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/GridContainer/AcceptButton" to="." method="_on_AcceptButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/GridContainer/RefuseButton" to="." method="_on_RefuseButton_pressed"]
