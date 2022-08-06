@@ -44,7 +44,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="SuperCow Definitive Edition"
+config/name="Supercow Definitive Edition"
 run/main_scene="res://other_scenes/MainMenu.tscn"
 config/icon="res://DefinitiveIcon.webp"
 
@@ -52,10 +52,10 @@ config/icon="res://DefinitiveIcon.webp"
 
 Global="*res://scripts/auto_load/global.gd"
 References="*res://scripts/auto_load/references.gd"
-Ui="*res://objects/debugUI.tscn"
+DebugUI="*res://objects/debugUI.tscn"
 Audio="*res://scripts/auto_load/audio.gd"
 Sounds="*res://scripts/auto_load/sounds.gd"
-DarkBg="*res://assets/sprites/ui/DarkBG.tscn"
+Blackout="*res://assets/sprites/ui/Blackout.tscn"
 
 [debug]
 

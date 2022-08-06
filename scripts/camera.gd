@@ -3,7 +3,7 @@ class_name PlayerCamera extends Camera
 export var zoom: float = 12.0
 export var scroll_y: float
 
-onready var rect: Rect2 = Ui.get_node('Control/Rect').get_rect()
+onready var rect: Rect2 = DebugUI.get_node('Control/Rect').get_rect()
 onready var target: Spatial = References.player
 
 var _explore_mod: bool
@@ -64,4 +64,4 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("zoom_out"):
 		zoom += 1
 	
-	rect = Ui.get_node('Control/Rect').get_rect()
+	rect = DebugUI.get_node('Control/Rect').get_rect()

@@ -1,0 +1,236 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/themes/settings_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/fonts/SplashTextButtonsFont.tres" type="DynamicFont" id=2]
+
+[node name="SettingsMenu" type="PopupPanel"]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -206.0
+margin_top = -167.0
+margin_right = 206.0
+margin_bottom = 167.0
+theme = ExtResource( 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -206.0
+margin_top = -167.0
+margin_right = 206.0
+margin_bottom = 167.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 412.0
+margin_bottom = 334.0
+
+[node name="TabContainer" type="TabContainer" parent="MarginContainer/VBoxContainer"]
+margin_right = 412.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 400, 300 )
+
+[node name="General" type="Tabs" parent="MarginContainer/VBoxContainer/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 33.0
+
+[node name="GeneralSettingsContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/General"]
+margin_right = 412.0
+margin_bottom = 259.0
+
+[node name="SFXVolumeLabel" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer"]
+margin_right = 412.0
+margin_bottom = 29.0
+text = "Громкость звука"
+align = 1
+
+[node name="SFXVolumeScrollbar" type="HScrollBar" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer"]
+margin_top = 33.0
+margin_right = 412.0
+margin_bottom = 45.0
+value = 85.0
+
+[node name="MusicVolumeLabel" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer"]
+margin_top = 49.0
+margin_right = 412.0
+margin_bottom = 78.0
+text = "Громкость музыки"
+align = 1
+
+[node name="MusicVolumeScrollbar" type="HScrollBar" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer"]
+margin_top = 82.0
+margin_right = 412.0
+margin_bottom = 94.0
+value = 65.0
+
+[node name="GameCursorCheckbutton" type="CheckButton" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer"]
+margin_top = 98.0
+margin_right = 412.0
+margin_bottom = 130.0
+text = "Игровой курсор"
+
+[node name="SplashTextHeading" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer"]
+visible = false
+margin_top = 134.0
+margin_right = 412.0
+margin_bottom = 163.0
+text = "Сплеш-текст"
+align = 1
+
+[node name="SplashTextSettingsContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer"]
+margin_top = 134.0
+margin_right = 412.0
+margin_bottom = 259.0
+
+[node name="NoSplashContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer"]
+margin_right = 100.0
+margin_bottom = 125.0
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer/NoSplashContainer"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="NoSplashTextLabel" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer/NoSplashContainer"]
+margin_top = 104.0
+margin_right = 100.0
+margin_bottom = 125.0
+custom_fonts/font = ExtResource( 2 )
+text = "Отключить сплеш-текст"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="OnlySoundContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 125.0
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer/OnlySoundContainer"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="OnlySoundLabel" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer/OnlySoundContainer"]
+margin_top = 104.0
+margin_right = 100.0
+margin_bottom = 113.0
+custom_fonts/font = ExtResource( 2 )
+text = "Только звук"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="FlyoutSplashContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer"]
+margin_left = 208.0
+margin_right = 308.0
+margin_bottom = 125.0
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer/FlyoutSplashContainer"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="FlyoutSplashLabel" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer/FlyoutSplashContainer"]
+margin_top = 104.0
+margin_right = 100.0
+margin_bottom = 125.0
+custom_fonts/font = ExtResource( 2 )
+text = "«Вылетающий» сплеш-текст"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="OriginalSplashContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer"]
+margin_left = 312.0
+margin_right = 412.0
+margin_bottom = 125.0
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer/OriginalSplashContainer"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="OriginalSplashLabel" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/General/GeneralSettingsContainer/SplashTextSettingsContainer/OriginalSplashContainer"]
+margin_top = 104.0
+margin_right = 100.0
+margin_bottom = 125.0
+custom_fonts/font = ExtResource( 2 )
+text = "Оригинальный сплеш-текст"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Video" type="Tabs" parent="MarginContainer/VBoxContainer/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 33.0
+
+[node name="VideoSettingsContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/Video"]
+margin_right = 400.0
+margin_bottom = 267.0
+rect_min_size = Vector2( 400, 0 )
+
+[node name="OptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/TabContainer/Video/VideoSettingsContainer"]
+margin_right = 404.0
+margin_bottom = 29.0
+text = "Оконный режим"
+items = [ "На полный экран", null, false, 0, null, "Безрамочное окно", null, false, 1, null, "Оконный режим", null, false, 2, null ]
+selected = 2
+
+[node name="ResolutionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/TabContainer/Video/VideoSettingsContainer"]
+margin_top = 33.0
+margin_right = 404.0
+margin_bottom = 62.0
+disabled = true
+text = "Placeholder Resolution"
+items = [ "Placeholder Resolution", null, false, 0, null ]
+selected = 0
+
+[node name="VSyncCheckbox" type="CheckBox" parent="MarginContainer/VBoxContainer/TabContainer/Video/VideoSettingsContainer"]
+margin_top = 66.0
+margin_right = 404.0
+margin_bottom = 95.0
+disabled = true
+text = "V-Sync"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer/TabContainer/Video/VideoSettingsContainer"]
+margin_top = 99.0
+margin_right = 404.0
+margin_bottom = 103.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/Video/VideoSettingsContainer"]
+margin_top = 107.0
+margin_right = 404.0
+margin_bottom = 136.0
+
+[node name="ApplyButton" type="Button" parent="MarginContainer/VBoxContainer/TabContainer/Video/VideoSettingsContainer/HBoxContainer"]
+margin_right = 200.0
+margin_bottom = 29.0
+rect_min_size = Vector2( 200, 0 )
+disabled = true
+text = "Применить"
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/TabContainer/Video/VideoSettingsContainer/HBoxContainer"]
+margin_left = 204.0
+margin_right = 404.0
+margin_bottom = 29.0
+rect_min_size = Vector2( 200, 0 )
+disabled = true
+text = "Сбросить"
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+margin_top = 304.0
+margin_right = 412.0
+margin_bottom = 334.0
+rect_min_size = Vector2( 0, 30 )
+text = "Сохранить"

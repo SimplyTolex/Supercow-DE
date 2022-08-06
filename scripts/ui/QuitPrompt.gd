@@ -8,7 +8,7 @@ func _on_QuitButton_pressed() -> void:
 
 func _on_ReturnButton_pressed() -> void:
 	emit_signal("return_to_menu", "MenuSelection/MarginContainer/VBoxContainer/MarginContainer3/QuitButton")
-	DarkBg.hide()
+	Blackout.disappear()
 	self.hide()
 
 

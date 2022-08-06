@@ -16,8 +16,7 @@ func _ready() -> void:
 
 func on_QuitButton_pressed():
 	$MenuSelection.hide()
-	if !DarkBg.is_visible_in_tree():
-		DarkBg.show()
+	Blackout.appear()
 	$QuitPrompt.popup_centered()
 
 
@@ -28,3 +27,10 @@ func on_return_to_menu(focus_to):
 
 func on_PlayButton_pressed():
 	get_tree().change_scene("res://levels/test.tscn")
+
+
+func on_SettingsButton_pressed():
+	var settings_menu_scene = preload("res://other_scenes/SettingsMenu.tscn").instance()
+	get_tree().current_scene.add_child(settings_menu_scene)
+	$MenuSelection.hide()
+	settings_menu_scene.show()
