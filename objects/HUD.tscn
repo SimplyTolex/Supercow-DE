@@ -1,16 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/sprites/ui/hud/lifebar.png" type="Texture" id=1]
 [ext_resource path="res://scripts/HUD.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/ui/hud/levelbar.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/ui/hud/scorebar.png" type="Texture" id=4]
 [ext_resource path="res://assets/themes/comic_sans.tres" type="Theme" id=5]
+[ext_resource path="res://other_scenes/PauseSelection.tscn" type="PackedScene" id=6]
 
 [node name="HUD" type="CanvasLayer"]
+pause_mode = 2
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_horizontal_guides_": [ 690.0 ]
-}
 
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
@@ -122,3 +121,8 @@ text = "69/420"
 align = 1
 valign = 1
 uppercase = true
+
+[node name="PauseSelection" parent="." instance=ExtResource( 6 )]
+visible = false
+
+[connection signal="unpause" from="PauseSelection" to="." method="_on_PauseSelection_unpause"]

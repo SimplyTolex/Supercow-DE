@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://levels/BaseLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/tiles/ground3/mesh/Lib.meshlib" type="MeshLibrary" id=2]
+[ext_resource path="res://assets/music/game4.ogg" type="AudioStream" id=3]
+
+[node name="InheretenceTest" instance=ExtResource( 1 )]
+music = [ ExtResource( 3 ) ]
+
+[node name="GridMap" parent="." index="0"]
+mesh_library = ExtResource( 2 )
+data = {
+"cells": PoolIntArray( 65535, 0, 0, 65535, 1, 0, 65535, 2, 0, 65535, 65535, 0 )
+}
+
+[node name="StartPos" parent="." index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.642393, 2.50419, 0 )

@@ -5,7 +5,7 @@ var caller: Node
 # Когда нода просит показать тёмный фон, она передаёт своё имя (`get_node(".")`) в аргументе функции. Теперь только она же сможет закрыть тёмный фон.
 
 
-func appear(node_name):
+func appear(node_name): # * USE get_node(".") *
 	if not $BlackoutPanel.is_visible_in_tree():
 		$BlackoutPanel.show()
 		print("appearing")

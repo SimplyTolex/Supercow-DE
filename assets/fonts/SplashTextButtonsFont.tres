@@ -7,5 +7,4 @@ font_path = "res://assets/fonts/comic.ttf"
 size = 13
 use_mipmaps = true
 use_filter = true
-extra_spacing_top = -10
 font_data = SubResource( 12 )
