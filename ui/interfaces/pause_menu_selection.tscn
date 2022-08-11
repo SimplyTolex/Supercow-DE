@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://assets/themes/main_menu_theme.tres" type="Theme" id=1]
-[ext_resource path="res://scripts/ui/PauseSelection.gd" type="Script" id=2]
+[ext_resource path="res://scripts/ui/pause_menu_selection.gd" type="Script" id=2]
 
 [node name="PauseSelection" type="PanelContainer"]
 anchor_left = 0.5

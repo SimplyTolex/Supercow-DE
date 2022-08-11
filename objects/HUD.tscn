@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/sprites/ui/hud/levelbar.png" type="Texture" id=3]
 [ext_resource path="res://assets/sprites/ui/hud/scorebar.png" type="Texture" id=4]
 [ext_resource path="res://assets/themes/comic_sans.tres" type="Theme" id=5]
-[ext_resource path="res://other_scenes/PauseSelection.tscn" type="PackedScene" id=6]
+[ext_resource path="res://ui/interfaces/pause_menu_selection.tscn" type="PackedScene" id=6]
 
 [node name="HUD" type="CanvasLayer"]
 pause_mode = 2

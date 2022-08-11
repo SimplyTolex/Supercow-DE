@@ -1,5 +1,15 @@
 extends Node
 
-var player: Player = load('res://objects/player.tscn').instance()
-var camera: Camera = load('res://objects/camera.tscn').instance()
-var hud: HUD = load('res://objects/HUD.tscn').instance()
+var player: Player
+var camera: Camera
+var hud: HUD
+
+
+func _ready() -> void:
+	make_refs()
+
+
+func make_refs():
+	player = load('res://objects/player.tscn').instance()
+	camera = load('res://objects/camera.tscn').instance()
+	hud = load('res://objects/HUD.tscn').instance()

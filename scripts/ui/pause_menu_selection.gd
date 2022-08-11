@@ -8,7 +8,7 @@ func _on_ReturnButton_pressed() -> void:
 
 func _on_RestartButton_pressed() -> void:
 #	self.hide()
-	var prompt = preload("res://other_scenes/RestartPrompt.tscn").instance()
+	var prompt = preload("res://ui/interfaces/restart_prompt.tscn").instance()
 	add_child(prompt)
 	prompt.caller = $MarginContainer/VBoxContainer/MarginContainer2/RestartButton
 	prompt.connect("return_to_menu", self, "on_return_to_menu")
@@ -21,7 +21,8 @@ func _on_SettingsButton_pressed() -> void:
 
 func _on_QuitToTilteButton_pressed() -> void:
 	emit_signal("unpause")
-	get_tree().change_scene("res://other_scenes/MainMenu.tscn")
+	get_tree().change_scene("res://ui/main_menu.tscn")
+	References.make_refs()
 
 
 func on_return_to_menu(focus_to):

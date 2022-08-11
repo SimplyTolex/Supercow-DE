@@ -5,28 +5,36 @@
 [sub_resource type="GDScript" id=1]
 script/source = "extends CanvasLayer
 
+#TODO: переписать debugui с состояниями, чтобы он не пытался показывать параметры игрока в сценах где его нет и наоборот.
+
+
 #func _ready():
 #	get_tree().root.add_child(self)
 #	owner = get_tree().root
 
 
 func _physics_process(_delta: float) -> void:
+	
 	$Control/Panel/Label.text = References.player.to_string()
 	
 	if Input.is_action_just_pressed(\"debug_1\"):
 		$Control.visible = !$Control.visible
 
+
 func _process(delta):
 	$Control/Icon.position = References.camera.unproject_position(References.player.translation + Vector3(0,1.5,0))
+
 
 func _on_Label_rect() -> void:
 	$Control/Panel.rect_size = $Control/Panel/Label.rect_size
 "
 
 [node name="UI" type="CanvasLayer"]
+layer = 3
 script = SubResource( 1 )
 
 [node name="Control" type="Popup" parent="."]
+visible = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( -450, -66 )

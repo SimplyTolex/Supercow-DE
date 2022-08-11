@@ -7,17 +7,17 @@ func _ready():
 
 	if start is Position3D:
 		add_child(References.player)
-		References.player.owner = self
+#		References.player.owner = self
 		# Да, ты можешь вращать стартувую позицию и игрок начнет с такимже углом вращения
 		# Также работает и с размером, будет полезно для пользовательских уровней
 		References.player.global_transform = start.transform
 
 		add_child(References.camera)
-		References.camera.owner = self
+#		References.camera.owner = self
 		#References.camera.translation = References.player.translation
 
 		add_child(References.hud)
-		References.hud.owner = self
+#		References.hud.owner = self
 	else:
 		push_warning('[LEVEL]: IN %s STARTPOS IS %s, STARTING WITHOUT PLAYER!' % [self,start])
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DefinitiveIcon.webp-07e3ea1c6134c48d051b664b938bb050.stex"
+path="res://.import/definitive_icon.webp-ad77c60f992602fe9d40b4ded13fa636.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DefinitiveIcon.webp"
-dest_files=[ "res://.import/DefinitiveIcon.webp-07e3ea1c6134c48d051b664b938bb050.stex" ]
+source_file="res://definitive_icon.webp"
+dest_files=[ "res://.import/definitive_icon.webp-ad77c60f992602fe9d40b4ded13fa636.stex" ]
 
 [params]
 

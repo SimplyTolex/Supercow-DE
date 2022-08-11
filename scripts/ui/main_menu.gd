@@ -26,7 +26,7 @@ func on_PlayButton_pressed():
 
 
 func on_SettingsButton_pressed():
-	var settings_menu_scene = preload("res://other_scenes/SettingsMenu.tscn").instance()
+	var settings_menu_scene = preload("res://ui/settings_menu.tscn").instance()
 	get_tree().current_scene.add_child(settings_menu_scene)
 	$MenuSelection.hide()
 	settings_menu_scene.show()

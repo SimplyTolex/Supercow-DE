@@ -1,4 +1,4 @@
-extends "res://scripts/ui/BasePrompt.gd"
+extends "res://scripts/ui/base_prompt.gd"
 signal restart_level
 
 
