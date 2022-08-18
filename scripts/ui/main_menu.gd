@@ -9,6 +9,10 @@ func _ready() -> void:
 	$MenuSelection/MarginContainer/VBoxContainer/MarginContainer2/SettingsButton.connect("pressed", self, "on_SettingsButton_pressed")
 	$MenuSelection/MarginContainer/VBoxContainer/MarginContainer4/InfoButton.connect("pressed", self, "on_InfoButton_pressed")
 	$MenuSelection/MarginContainer/VBoxContainer/MarginContainer3/QuitButton.connect("pressed", self, "on_QuitButton_pressed")
+	$MenuSelection/MarginContainer/VBoxContainer/MarginContainer/PlayButton.connect("focus_entered", self, "on_focus_changed")
+	$MenuSelection/MarginContainer/VBoxContainer/MarginContainer2/SettingsButton.connect("focus_entered", self, "on_focus_changed")
+	$MenuSelection/MarginContainer/VBoxContainer/MarginContainer4/InfoButton.connect("focus_entered", self, "on_focus_changed")
+	$MenuSelection/MarginContainer/VBoxContainer/MarginContainer3/QuitButton.connect("focus_entered", self, "on_focus_changed")
 	$QuitPrompt.connect("return_to_menu", self, "on_return_to_menu")
 	
 	Audio.play_random(music, 0)
@@ -35,3 +39,8 @@ func on_SettingsButton_pressed():
 func on_QuitButton_pressed():
 	$MenuSelection.hide()
 	$QuitPrompt.popup_centered()
+
+
+func on_focus_changed():
+#	Audio.play_sound("res://assets/sounds/menu2.ogg", Vector3.ZERO)
+	pass

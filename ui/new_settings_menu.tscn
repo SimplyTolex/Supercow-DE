@@ -1,0 +1,253 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/themes/settings_theme.tres" type="Theme" id=1]
+[ext_resource path="res://ui/new_settings_menu.gd" type="Script" id=2]
+[ext_resource path="res://ui/interfaces/ControlsTab.tscn" type="PackedScene" id=3]
+
+[node name="SettingsMenu" type="PopupPanel"]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -250.0
+margin_right = 250.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 500, 500 )
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="TabContainer" type="TabContainer" parent="."]
+margin_right = 500.0
+margin_bottom = 500.0
+
+[node name="Video" type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 33.0
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Video"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Video/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 490.0
+margin_bottom = 457.0
+custom_constants/separation = 6
+
+[node name="WindowOptions" type="HBoxContainer" parent="TabContainer/Video/MarginContainer/VBoxContainer"]
+margin_right = 480.0
+margin_bottom = 29.0
+
+[node name="Label" type="Label" parent="TabContainer/Video/MarginContainer/VBoxContainer/WindowOptions"]
+margin_right = 193.0
+margin_bottom = 29.0
+text = "Режим отображения"
+
+[node name="OptionButton" type="OptionButton" parent="TabContainer/Video/MarginContainer/VBoxContainer/WindowOptions"]
+margin_left = 307.0
+margin_right = 480.0
+margin_bottom = 29.0
+size_flags_horizontal = 10
+text = "Оконный режим"
+items = [ "Оконный режим", null, false, 0, null, "Полный экран", null, false, 1, null, "Безрамочное окно", null, false, 2, null ]
+selected = 0
+
+[node name="VSyncCheckbox" type="CheckBox" parent="TabContainer/Video/MarginContainer/VBoxContainer"]
+margin_top = 35.0
+margin_right = 480.0
+margin_bottom = 64.0
+pressed = true
+text = "V-Sync"
+
+[node name="ResolutionOptions" type="HBoxContainer" parent="TabContainer/Video/MarginContainer/VBoxContainer"]
+margin_top = 70.0
+margin_right = 480.0
+margin_bottom = 99.0
+
+[node name="Label" type="Label" parent="TabContainer/Video/MarginContainer/VBoxContainer/ResolutionOptions"]
+margin_right = 180.0
+margin_bottom = 29.0
+text = "Разрешение экрана"
+
+[node name="OptionButton" type="OptionButton" parent="TabContainer/Video/MarginContainer/VBoxContainer/ResolutionOptions"]
+margin_left = 257.0
+margin_right = 480.0
+margin_bottom = 29.0
+size_flags_horizontal = 10
+text = "Placeholder Resolution"
+items = [ "Placeholder Resolution", null, false, 0, null ]
+selected = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Video/MarginContainer/VBoxContainer"]
+margin_top = 410.0
+margin_right = 480.0
+margin_bottom = 447.0
+size_flags_vertical = 10
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/Video/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_right = 480.0
+margin_bottom = 4.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Video/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 8.0
+margin_right = 480.0
+margin_bottom = 37.0
+
+[node name="ApplyButton" type="Button" parent="TabContainer/Video/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 63.0
+margin_right = 174.0
+margin_bottom = 29.0
+size_flags_horizontal = 6
+text = "Применить"
+
+[node name="RevertButton" type="Button" parent="TabContainer/Video/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 314.0
+margin_right = 408.0
+margin_bottom = 29.0
+size_flags_horizontal = 6
+disabled = true
+text = "Отменить"
+
+[node name="General" type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 33.0
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/General"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/General/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 490.0
+margin_bottom = 457.0
+custom_constants/separation = 6
+
+[node name="SFXVolumeContainer" type="HBoxContainer" parent="TabContainer/General/MarginContainer/VBoxContainer"]
+margin_right = 480.0
+margin_bottom = 29.0
+
+[node name="SFXVolumeLabel" type="Label" parent="TabContainer/General/MarginContainer/VBoxContainer/SFXVolumeContainer"]
+margin_right = 156.0
+margin_bottom = 29.0
+text = "Громкость звука"
+
+[node name="SFXSliderContainer" type="HBoxContainer" parent="TabContainer/General/MarginContainer/VBoxContainer/SFXVolumeContainer"]
+margin_left = 236.0
+margin_right = 480.0
+margin_bottom = 29.0
+size_flags_horizontal = 10
+
+[node name="SFXPercentage" type="Label" parent="TabContainer/General/MarginContainer/VBoxContainer/SFXVolumeContainer/SFXSliderContainer"]
+margin_right = 40.0
+margin_bottom = 29.0
+text = "70%"
+
+[node name="SFXSlider" type="HSlider" parent="TabContainer/General/MarginContainer/VBoxContainer/SFXVolumeContainer/SFXSliderContainer"]
+margin_left = 44.0
+margin_right = 244.0
+margin_bottom = 29.0
+rect_min_size = Vector2( 200, 0 )
+size_flags_vertical = 1
+step = 5.0
+value = 70.0
+rounded = true
+tick_count = 11
+
+[node name="MusicVolumeContainer" type="HBoxContainer" parent="TabContainer/General/MarginContainer/VBoxContainer"]
+margin_top = 35.0
+margin_right = 480.0
+margin_bottom = 64.0
+
+[node name="MusicVolumeLabel" type="Label" parent="TabContainer/General/MarginContainer/VBoxContainer/MusicVolumeContainer"]
+margin_right = 156.0
+margin_bottom = 29.0
+text = "Громкость звука"
+
+[node name="MusicSliderContainer" type="HBoxContainer" parent="TabContainer/General/MarginContainer/VBoxContainer/MusicVolumeContainer"]
+margin_left = 236.0
+margin_right = 480.0
+margin_bottom = 29.0
+size_flags_horizontal = 10
+
+[node name="MusicPercentage" type="Label" parent="TabContainer/General/MarginContainer/VBoxContainer/MusicVolumeContainer/MusicSliderContainer"]
+margin_right = 40.0
+margin_bottom = 29.0
+text = "50%"
+
+[node name="MusicSlider" type="HSlider" parent="TabContainer/General/MarginContainer/VBoxContainer/MusicVolumeContainer/MusicSliderContainer"]
+margin_left = 44.0
+margin_right = 244.0
+margin_bottom = 29.0
+rect_min_size = Vector2( 200, 0 )
+size_flags_vertical = 1
+step = 5.0
+value = 50.0
+rounded = true
+tick_count = 11
+
+[node name="CheckButton" type="CheckButton" parent="TabContainer/General/MarginContainer/VBoxContainer"]
+margin_top = 70.0
+margin_right = 480.0
+margin_bottom = 102.0
+text = "Игровой курсор"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/General/MarginContainer/VBoxContainer"]
+margin_top = 410.0
+margin_right = 480.0
+margin_bottom = 447.0
+size_flags_vertical = 10
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/General/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_right = 480.0
+margin_bottom = 4.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/General/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 8.0
+margin_right = 480.0
+margin_bottom = 37.0
+
+[node name="ApplyButton" type="Button" parent="TabContainer/General/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 63.0
+margin_right = 174.0
+margin_bottom = 29.0
+size_flags_horizontal = 6
+text = "Применить"
+
+[node name="RevertButton" type="Button" parent="TabContainer/General/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 314.0
+margin_right = 408.0
+margin_bottom = 29.0
+size_flags_horizontal = 6
+disabled = true
+text = "Отменить"
+
+[node name="Controls" type="Tabs" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 33.0
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Controls"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="ControlsTabContainer" parent="TabContainer/Controls/MarginContainer" instance=ExtResource( 3 )]
